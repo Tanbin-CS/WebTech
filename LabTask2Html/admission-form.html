@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form - AIUB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>American International University-Bangladesh</h1>
+            <h2>Online Admission Form</h2>
+        </header>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name: <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" required maxlength="100" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth: <span class="required">*</span></label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender: <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address: <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Contact Number: <span class="required">*</span></label>
+                    <input type="text" id="phone" name="phone" required maxlength="15" placeholder="+880-XXXXXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Permanent Address: <span class="required">*</span></label>
+                    <textarea id="address" name="address" required rows="4" maxlength="200" placeholder="Enter your permanent address"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="nationality">Nationality: <span class="required">*</span></label>
+                    <input type="text" id="nationality" name="nationality" required maxlength="50" value="Bangladeshi">
+                </div>
+
+                <div class="form-group">
+                    <label for="religion">Religion:</label>
+                    <select id="religion" name="religion">
+                        <option value="">Select Religion</option>
+                        <option value="islam">Islam</option>
+                        <option value="hinduism">Hinduism</option>
+                        <option value="buddhism">Buddhism</option>
+                        <option value="christianity">Christianity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Academic Information Section -->
+            <fieldset>
+                <legend>Academic Information</legend>
+                
+                <div class="form-group">
+                    <label for="sscInstitution">SSC/O-Level Institution: <span class="required">*</span></label>
+                    <input type="text" id="sscInstitution" name="sscInstitution" required maxlength="100" placeholder="Enter institution name">
+                </div>
+
+                <div class="form-group">
+                    <label for="sscYear">SSC/O-Level Passing Year: <span class="required">*</span></label>
+                    <input type="text" id="sscYear" name="sscYear" required maxlength="4" placeholder="YYYY">
+                </div>
+
+                <div class="form-group">
+                    <label for="sscGPA">SSC/O-Level GPA/Grade: <span class="required">*</span></label>
+                    <input type="text" id="sscGPA" name="sscGPA" required maxlength="4" placeholder="e.g., 5.00 or A">
+                </div>
+
+                <div class="form-group">
+                    <label for="hscInstitution">HSC/A-Level Institution: <span class="required">*</span></label>
+                    <input type="text" id="hscInstitution" name="hscInstitution" required maxlength="100" placeholder="Enter institution name">
+                </div>
+
+                <div class="form-group">
+                    <label for="hscYear">HSC/A-Level Passing Year: <span class="required">*</span></label>
+                    <input type="text" id="hscYear" name="hscYear" required maxlength="4" placeholder="YYYY">
+                </div>
+
+                <div class="form-group">
+                    <label for="hscGPA">HSC/A-Level GPA/Grade: <span class="required">*</span></label>
+                    <input type="text" id="hscGPA" name="hscGPA" required maxlength="4" placeholder="e.g., 5.00 or A">
+                </div>
+
+                <div class="form-group">
+                    <label for="hscGroup">HSC/A-Level Group:</label>
+                    <select id="hscGroup" name="hscGroup">
+                        <option value="">Select Group</option>
+                        <option value="science">Science</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="arts">Arts</option>
+                        <option value="business">Business Studies</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Course Selection Section -->
+            <fieldset>
+                <legend>Course Selection</legend>
+                
+                <div class="form-group">
+                    <label for="faculty">Faculty: <span class="required">*</span></label>
+                    <select id="faculty" name="faculty" required>
+                        <option value="">Select Faculty</option>
+                        <option value="fst">Faculty of Science and Technology (FST)</option>
+                        <option value="fba">Faculty of Business Administration (FBA)</option>
+                        <option value="fass">Faculty of Arts and Social Sciences (FASS)</option>
+                        <option value="fe">Faculty of Engineering (FE)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Preferred Department: <span class="required">*</span></label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="cse">Computer Science and Engineering</option>
+                        <option value="eee">Electrical and Electronic Engineering</option>
+                        <option value="ce">Civil Engineering</option>
+                        <option value="bba">Business Administration</option>
+                        <option value="economics">Economics</option>
+                        <option value="english">English</option>
+                        <option value="mba">MBA</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="degreeProgram">Degree Program: <span class="required">*</span></label>
+                    <select id="degreeProgram" name="degreeProgram" required>
+                        <option value="">Select Program</option>
+                        <option value="undergraduate">Undergraduate (Bachelor's)</option>
+                        <option value="graduate">Graduate (Master's)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Preferred Semester: <span class="required">*</span></label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Areas of Interest:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="programming" name="interests" value="programming">
+                        <label for="programming">Programming</label>
+                        
+                        <input type="checkbox" id="webdev" name="interests" value="webdev">
+                        <label for="webdev">Web Development</label>
+                        
+                        <input type="checkbox" id="ai" name="interests" value="ai">
+                        <label for="ai">Artificial Intelligence</label>
+                        
+                        <input type="checkbox" id="networking" name="interests" value="networking">
+                        <label for="networking">Networking</label>
+                        
+                        <input type="checkbox" id="database" name="interests" value="database">
+                        <label for="database">Database Management</label>
+                        
+                        <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
+                        <label for="cybersecurity">Cybersecurity</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Guardian Information Section -->
+            <fieldset>
+                <legend>Guardian Information</legend>
+                
+                <div class="form-group">
+                    <label for="guardianName">Guardian's Name: <span class="required">*</span></label>
+                    <input type="text" id="guardianName" name="guardianName" required maxlength="100" placeholder="Enter guardian's full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianRelation">Relation: <span class="required">*</span></label>
+                    <select id="guardianRelation" name="guardianRelation" required>
+                        <option value="">Select Relation</option>
+                        <option value="father">Father</option>
+                        <option value="mother">Mother</option>
+                        <option value="brother">Brother</option>
+                        <option value="sister">Sister</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianPhone">Guardian's Contact Number: <span class="required">*</span></label>
+                    <input type="text" id="guardianPhone" name="guardianPhone" required maxlength="15" placeholder="+880-XXXXXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianEmail">Guardian's Email:</label>
+                    <input type="email" id="guardianEmail" name="guardianEmail" placeholder="guardian@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianOccupation">Guardian's Occupation:</label>
+                    <input type="text" id="guardianOccupation" name="guardianOccupation" maxlength="50" placeholder="Enter occupation">
+                </div>
+            </fieldset>
+
+            <!-- Document Upload Section -->
+            <fieldset>
+                <legend>Document Uploads</legend>
+                
+                <div class="form-group">
+                    <label for="photo">Passport Size Photo: <span class="required">*</span></label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                    <small>Please upload a recent passport-size photograph (JPG, PNG, max 2MB)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="sscCertificate">SSC/O-Level Certificate: <span class="required">*</span></label>
+                    <input type="file" id="sscCertificate" name="sscCertificate" accept=".pdf,.jpg,.png" required>
+                    <small>Upload scanned copy (PDF, JPG, PNG)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="hscCertificate">HSC/A-Level Certificate: <span class="required">*</span></label>
+                    <input type="file" id="hscCertificate" name="hscCertificate" accept=".pdf,.jpg,.png" required>
+                    <small>Upload scanned copy (PDF, JPG, PNG)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="transcript">Academic Transcript:</label>
+                    <input type="file" id="transcript" name="transcript" accept=".pdf">
+                    <small>Upload complete academic transcript (PDF, optional)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="nidBirthCert">NID/Birth Certificate: <span class="required">*</span></label>
+                    <input type="file" id="nidBirthCert" name="nidBirthCert" accept=".pdf,.jpg,.png" required>
+                    <small>Upload scanned copy (PDF, JPG, PNG)</small>
+                </div>
+            </fieldset>
+
+            <!-- Declaration Section -->
+            <fieldset>
+                <legend>Declaration</legend>
+                
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="declaration" name="declaration" required>
+                        <label for="declaration">
+                            I hereby declare that all the information provided above is true and correct to the best of my knowledge. 
+                            I understand that any false information may lead to cancellation of my admission.
+                            <span class="required">*</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signatureDate">Date: <span class="required">*</span></label>
+                    <input type="date" id="signatureDate" name="signatureDate" required>
+                </div>
+            </fieldset>
+
+            <!-- Form Buttons -->
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+                <button type="reset" class="btn btn-secondary">Reset Form</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>&copy; 2026 American International University-Bangladesh. All rights reserved.</p>
+            <p>For any queries, contact us at: admissions@aiub.edu</p>
+        </footer>
+    </div>
+</body>
+</html>
