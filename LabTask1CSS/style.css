@@ -1,0 +1,124 @@
+/* ========================
+   Element Selector - body
+   ======================== */
+body {
+    background-color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ========================
+   Element Selector - h1
+   ======================== */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+    font-size: 30px;
+}
+
+/* ========================
+   Element Selector - table
+   ======================== */
+table {
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: wheat;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+td {
+    padding: 8px 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+/* ========================
+   ID Selector - #subtitle
+   ======================== */
+#subtitle {
+    color: rgb(54, 54, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+/* ========================
+   ID Selector - #profile-photo
+   ======================== */
+#profile-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #003366;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ========================
+   ID Selector - #bio-heading
+   ======================== */
+#bio-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 14px;
+}
+
+/* ========================
+   Class Selector - .dept
+   ======================== */
+.dept {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+/* ========================
+   Class Selector - .profile-section
+   ======================== */
+.profile-section {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e8f0fe;
+    border: 2px solid #4a90d9;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ========================
+   Class Selector - .bio
+   ======================== */
+.bio {
+    color: rgb(60, 88, 131);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* ========================
+   Class Selector - .footer
+   ======================== */
+.footer {
+    background-color: #003366;
+    color: #c8d8e8;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
